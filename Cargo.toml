@@ -1,0 +1,29 @@
+[package]
+name = "hello-world"
+version = "0.1.0"
+edition = "2021"
+
+
+[[bin]]
+name = "hello-world"
+path = "hello-world.rs"
+
+
+[[bin]]
+name = "hello-server"
+path = "server/main.rs"
+
+[[bin]]
+name = "hello-client"
+path = "hello-http-client.rs"
+
+
+[dependencies]
+tonic = "*"
+prost = "*"
+log="*"
+serde = { version = "1.0", features = ["derive"] }
+tokio = { version = "1.38", features = ["full"] }
+axum = "0.7"
+my_attribute = { path = "./my_attribute" }
+env_logger = "0.10"
