@@ -17,6 +17,11 @@ path = "server/main.rs"
 name = "hello-client"
 path = "hello-http-client.rs"
 
+# show dependency injection
+[[bin]]
+name = "dependency-injection-example"
+path = "dependency-injection-example.rs"
+
 
 [dependencies]
 tonic = "*"
